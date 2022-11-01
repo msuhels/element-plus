@@ -1,35 +1,23 @@
 {
-  "cSpell.words": ["Element Plus", "element-plus"],
+  "search.exclude": {
+    "**/.sst": true
+  },
+  "task.allowAutomaticTasks": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.tsdk": "node_modules/typescript/lib",
-  "editor.formatOnSave": true,
-  "npm.packageManager": "pnpm",
-  "eslint.probe": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "html",
-    "vue",
-    "markdown",
-    "json",
-    "jsonc"
-  ],
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "html",
-    "vue",
-    "markdown",
-    "json",
-    "jsonc"
-  ],
-  "vite.devCommand": "pnpm run dev -- --",
-  "i18n-ally.localesPaths": "packages/locale/lang",
-  "i18n-ally.enabledParsers": ["ts"],
-  "i18n-ally.enabledFrameworks": ["vue", "vue-sfc"],
-  "i18n-ally.keystyle": "nested",
-  "iconify.includes": ["ep"],
-  "unocss.root": "./docs"
+  "debug.openDebug": "neverOpen",
+  "problems.autoReveal": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.inheritEnv": false,
+  "jestrunner.configPath": "jest.unit.config.cjs",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
